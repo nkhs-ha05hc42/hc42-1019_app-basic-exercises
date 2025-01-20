@@ -1,7 +1,8 @@
 const nibai = (count) => {
     if (count >= 100) return
     count = count * 2
-    console.log(count)
+    if (count<=100)
+        console.log(count)
     nibai(count)
     
    }
