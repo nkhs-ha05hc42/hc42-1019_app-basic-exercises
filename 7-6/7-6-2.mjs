@@ -15,4 +15,4 @@ async function execute() {
     console.log("end", new Date())
 }
 
-execute();
+execute()
