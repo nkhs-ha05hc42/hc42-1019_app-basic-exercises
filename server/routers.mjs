@@ -2,6 +2,7 @@ import express from "express"
 import path from "path"
 import {q8_1_1Controller, 
     q8_1_2Controller,
+    q8_1_3Controller,
     sample1Controller,
          sample2Controller} from "./api/controllers.mjs"
 
@@ -15,6 +16,7 @@ routers.delete("/api/sample1", sample1Controller.deleteSample1)
 routers.get("/api/sample1/:id", sample1Controller.getPathParamSample1)
 routers.get("/api/8-1", q8_1_1Controller.get811)
 routers.post("/api/8-1", q8_1_2Controller.post812)
+routers.put("/api/8-1", q8_1_3Controller.put813)
 
 
 routers.post("/api/sample2", sample2Controller.postSample2)
