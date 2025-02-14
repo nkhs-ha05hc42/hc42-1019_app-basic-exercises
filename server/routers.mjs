@@ -44,3 +44,4 @@ routers.delete("/api/sample2/:id", sample2Controller.deleteSample2)
 routers.use(express.static(`${path.resolve()}/client`))
 
 export default routers
+
